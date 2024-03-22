@@ -1,0 +1,67 @@
+:root {
+    --cream : #ffe4b5;
+    --blood : #b22222;
+    --rojo : #D91010;
+}
+
+body{
+    margin: 0;
+    /* background-color: var(--bg-color); */
+}
+
+.navbar {
+    background-color: var(--blood);
+}
+
+.home-text{
+    background-color: rgba(255, 250, 240, 0.493);
+    color: var(--blood);
+}
+
+.home-text h1{
+    color: var(--blood);
+    font-weight: bold;
+}
+
+.tentang-kami {
+    padding-top: 100px;
+}
+
+.uk-table thead tr th, .uk-table tbody tr td{
+    text-align: center;
+}
+
+.uk-card-media-left img{
+    width: 600px;
+}
+
+.daftar-akun p a{
+    color: var(--blood);
+}
+
+.modal-register{
+    background-color: var(--blood);
+}
+
+.modal-register h3{
+    color: var(--cream);
+}
+
+.login-button button {
+    background-color: var(--blood);
+    color: var(--cream);
+}
+/* .info-table{
+    text-align: center;
+} */
+
+footer { 
+    background-color: var(--blood);
+    padding-bottom: 5px;
+    margin-top: -20px;
+    height: 30px;
+}
+
+footer p{
+    padding-top: 5px;
+}
