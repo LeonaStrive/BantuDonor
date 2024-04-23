@@ -13,12 +13,25 @@
 <body>
 
 <!-- Header -->
-<header >
+<header>
     <!-- Navbar -->
     <nav class="uk-navbar-container">
-        <div class="uk-container-fluid navbar">
-            <div class="uk-navbar-left uk-light uk-container" uk-navbar>
-                <a class="uk-navbar-item uk-logo" href="home" aria-label="Back to Home">Logo</a>
+        <div class="uk-container-fluid navbar" uk-sticky="uk-navbar-sticky">
+            <div class="uk-container" uk-navbar>
+
+                <div class="uk-navbar-left uk-light">
+                
+                    <a class="uk-navbar-item uk-logo" href="home">
+                        <img src="assets/img/donor.png" width="75" alt="Logo">
+                    </a>
+                </div>
+            
+                <div class="uk-navbar-right uk-light">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="home"><span uk-icon="icon: home"></span>Home</a></li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </nav>
@@ -37,7 +50,7 @@
         <div>
             <!-- Halaman Login -->
             <div class="uk-card-body">
-                <div class="login uk-container uk-text-center uk-padding ">
+                <div class="login uk-container uk-text-center uk-padding">
                     <div class="judul-login uk-container uk-padding uk-padding-remove-top">
                         <h3>Halaman Login Bantu Donor</h3>
                 </div>
@@ -113,7 +126,7 @@
 
 <!-- Footer -->
 <footer id="footer">
-    <div class="uk-container-fluid footer uk-text-center uk-text-warning">
+    <div class="uk-container uk-text-center footer-copyright">
         <p>&copy Bantu Donor</p>
     </div>
 </footer>

@@ -6,16 +6,14 @@
 
 body{
     margin: 0;
-    /* background-color: var(--bg-color); */
 }
 
-.navbar {
+.navbar, footer, .home-text, .modal-register, .login-button button{
     background-color: var(--blood);
 }
 
 .home-text{
     background-color: rgba(255, 250, 240, 0.493);
-    color: var(--blood);
 }
 
 .home-text h1{
@@ -23,7 +21,7 @@ body{
     font-weight: bold;
 }
 
-.tentang-kami {
+.tentang-kami, .stok-darah {
     padding-top: 100px;
 }
 
@@ -39,29 +37,89 @@ body{
     color: var(--blood);
 }
 
-.modal-register{
-    background-color: var(--blood);
-}
-
-.modal-register h3{
+.modal-register h3, .login-button button, .footer-desc, .footer-desc h2, .footer-contact a, .footer-menu ul li a, .footer-copyright p{
     color: var(--cream);
 }
 
-.login-button button {
-    background-color: var(--blood);
-    color: var(--cream);
-}
-/* .info-table{
-    text-align: center;
-} */
-
-footer { 
-    background-color: var(--blood);
-    padding-bottom: 5px;
-    margin-top: -20px;
-    height: 30px;
+.seputar-info{
+    padding-bottom: 100px;
 }
 
-footer p{
-    padding-top: 5px;
+.card-info{
+    transition: transform 0.5s ease;
+    /* background-color: lightgreen; */
+    width: 350px;
+    height: 350px;
+    color: black;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.info-1{
+    background-color: rgb(69, 69, 253);
+}
+
+.info-2{
+    background-color: rgb(247, 247, 72);
+}
+
+.info-3{
+    background-color: lightgreen;
+}
+
+.card-info p{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.card-info ul li{
+    font-size: 16px;
+}
+
+.card-info:hover{
+    transform: scale(1.1, 1.1);
+    background-color: rgba(255, 0, 0, 0.76);
+    /* color: black; */
+}
+
+
+/* footer */
+.footer-logo img{
+    width: 200px;
+}
+
+.footer-menu ul li{
+    margin-left: 100px;
+    /* color: var(--cream); */
+}
+
+.footer-copyright p{
+    margin-left: 100px;
+    padding-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .tentang-kami .uk-card .uk-card-body .uk-card-title{
+        text-align: center;
+    }
+
+    .card-info{
+        width: auto;
+        height: auto;
+        font-size: 15px;
+    }
+
+    .footer-logo img{
+        width: 150px;
+    }
+
+    .footer-desc{
+        text-align: center;
+    }
+
+    .footer-menu ul li, .footer-copyright p{
+        margin: 0;
+        text-align: center;
+    }
 }
